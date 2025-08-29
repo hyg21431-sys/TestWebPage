@@ -1,0 +1,215 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: beige;
+    height: 100px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.contents {
+    text-align: center;
+}
+
+.nav {
+    background-color: beige;
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    margin: 0px;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.menu a {
+    color: rgb(173, 147, 27);
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.main {
+    background-color: white;
+    height: 773px;
+    display: flex;
+}
+
+.aside-left {
+    background-color: white;
+    width: 50px;
+}
+
+.aside-right {
+    background-color: white;
+    width: 400px;
+    border-left: 2px solid black;
+}
+
+.contents h1 {
+    text-align: center;
+}
+
+#inputForm {
+    padding: 50px;
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border: 1px solid gray;
+    z-index: 100;
+}
+
+#readForm {
+    padding: 50px;
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    border: 1px solid gray;
+    z-index: 100;
+}
+
+#inputForm table tr td input {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 200px;
+}
+
+#inputForm table tr td input:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 10px blue;
+}
+
+#inputForm table {
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#list table {
+    margin: 0 auto;
+}
+
+#list table tr th {
+    width: 110px;
+}
+
+.writeSave {
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(189, 170, 145);
+}
+
+.addDel {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.addDel input {
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(189, 170, 145);
+}
+
+#todolist {
+    margin: 10px;
+}
+
+.aside-right h3 {
+    text-align: center;
+}
+
+#h-num {
+    width: 50px;
+    background-color:bisque
+}
+
+#h-todo {
+    width: 180px;
+    background-color: bisque;
+}
+
+#h-check {
+    width: 50px;
+    background-color: bisque;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.tdfont {
+    color: red;
+    text-decoration: underline;
+}
+
+.contents {
+    width: 100%;
+}
+
+.name {
+    text-align: center;
+}
+
+.footer {
+    background-color: gray;
+    height: 30px;
+}
+
+.footer p {
+    margin: 0px;
+    text-align: center;
+    color: white;
+}
+
+.login2 {
+    background-color: aqua;
+    width: 250px;
+    height: 40px;
+}
+
+.login-box {
+    border: 3px solid black;
+    margin: 0 auto;
+    width: 260px;
+    text-align: center;
+}
+
+.login-text {
+    text-align: center;
+}
+
+#readForm table tr td {
+    padding: 3px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.mouse-over:hover {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

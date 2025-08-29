@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>로그인</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> &#128541; 나의 웹 페이지</h1>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 홈</a></li>
+                <li><a href="./login.html">🔑 로그인</a></li>
+                <li><a href="./join.html">✅ 회원가입</a></li>
+                <li><a href="./profile.html">👦 프로필</a></li>
+                <li><a href="./portfolio.html">🙋‍♂️ 포트폴리오</a></li>
+                <li><a href="./board.html">📔 자유게시판</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="aside"></div>
+            <div class="contents">
+                <form name="login" action="#" method="get">
+                    <fieldset>
+                    <div>
+                        <h1 class="login-text">🔑 로 그 인 🔑</h1>
+                    </div>
+                    <div class="login-box">
+                        <p>
+                            <label>아 이 디</label>
+                            <input type="text" name="id" id="id" placeholder="아이디를 입력해주세요.">
+                        </p>
+                        <p>
+                            <label>비밀번호</label>
+                            <input type="text" name="pwd" id="pwd" placeholder="비밀번호를 입력해주세요.">
+                        </p>
+                        <p>
+                            <input class="login2" type="button" value="로그인">
+                        </p>
+                    </div>
+                    </fieldset>
+                </form>
+                <script>
+                    const loginEl = document.login.button;
+
+                    loginEl.onclick = function() {
+                        const id = document.login.id;
+                        const pwd = document.login.pwd;
+
+                        if(id.value == "") {
+                            alert("아이디를 입력해주세요.");
+                            id.focus();
+                            return;
+                        }
+
+                        if(pwd.value == "") {
+                            alert("비밀번호를 입력해주세요.");
+                            pwd.focus();
+                            return;
+                        }
+
+                        document.login.submit();
+                    }
+                </script>
+            </div>
+            <div class="aside"></div>
+        </div>
+        <div class="footer">
+            <p>나의 웹 페이지</p>
+        </div>
+    </body>
+</html>
