@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/boardScript.js"></script>
+        <title>자유게시판</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1> &#128541; 나의 웹 페이지</h1>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="../index.html">🏠 홈</a></li>
+                <li><a href="./login.html">🔑 로그인</a></li>
+                <li><a href="./join.html">✅ 회원가입</a></li>
+                <li><a href="./profile.html">👦 프로필</a></li>
+                <li><a href="./portfolio.html">🙋‍♂️ 포트폴리오</a></li>
+                <li><a href="./board.html">📔 자유게시판</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="aside"></div>
+            <div class="contents">
+                <div class="name">
+                    <h1>📝 자 유 게 시 판 📝</h1>
+                </div>
+                <div id="inputForm">
+                    <table>
+                        <tr>
+                            <th>제목</th><td><input type="text" id="tasktitle" placeholder="제목을 입력하세요."></td>
+                        </tr>
+                            <th>내용</th><td><input type="text" id="taskcontent" class="write" placeholder="내용을 입력하세요."></td>
+                        </tr>
+                            <th>작성자</th><td><input type="text" id="taskname" placeholder="작성자를 입력하세요."></td>
+                            <th class="check"> (전체 체크) <input type="checkbox" onclick="checkAll(this)"></th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="addDel">
+                    <input type="button" id="addTask" value="추가" onclick="addTask()">
+                    <input type="button" id="delTask" value="삭제" onclick="delTask()">
+                </div>
+                <div id="list">
+                    <table>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>내용</th>
+                            <th>작성자</th>
+                            <th id="date">작성일</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="aside"></div>
+        </div>
+        <div class="footer">
+            <p>나의 웹 페이지</p>
+        </div>
+    </body>
+</html>
